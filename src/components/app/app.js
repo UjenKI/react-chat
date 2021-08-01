@@ -14,7 +14,7 @@ export default class App extends Component {
         this.state = {
             data: [
                 {label: 'Fro example', important: true, like: false, id: 1},
-                {label: 'Lorem ipsum ', important: false, like: false, id: 2},
+                {label: 'Lorem ipsum ', important: false, like: true, id: 2},
                 {label: 'Sample text', important: false, like: false, id: 3},
             ],
             term: '',
@@ -130,7 +130,7 @@ export default class App extends Component {
                     allPosts={allPosts}
                 />
                 <div className="search-pannel d-flex">
-                    <SearchPannels
+                    <SearchPannel
                         searchInput={this.searchUpdate}
                     />
                     <PostStatusFilter
